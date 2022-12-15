@@ -7,9 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello {{$userName}}, please select a page to visualize</h1>
-
-    <a href="{{route('menu')}}">Menu</a>
-    <a href="{{route('clienti')}}">Customers</a>
+    <h1>{{$customersString}}</h1>
 </body>
 </html>

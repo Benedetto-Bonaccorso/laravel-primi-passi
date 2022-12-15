@@ -17,3 +17,13 @@ Route::get('/', function () {
     $userName = "Benny";
     return view('home', compact("userName"));
 });
+
+Route::get('/menu', function () {
+    $menuString = 'Cotoletta alla milanese, torta';
+    return view('menu', compact('menuString'));
+})->name('menu');
+
+Route::get('/clienti', function () {
+    $customersString = 'Donato, Fabrizio, Fabio';
+    return view('clienti', compact('customersString'));
+})->name('clienti');
